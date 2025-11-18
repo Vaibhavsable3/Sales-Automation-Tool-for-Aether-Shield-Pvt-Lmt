@@ -1,0 +1,285 @@
+:root{
+--bg-primary:#110230;
+--bg-secondary:#260e57;
+--btn-accent:#8c52ff;
+--text-light:#e6eef6;
+--text-muted:#a6a6a6;
+--error-red:#ff3131;
+--radius:8px;
+font-family:'Source Sans Pro',sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+body{
+margin:0;
+background:var(--bg-primary);
+color:var(--text-light);
+line-height:1.45;
+padding:0 20px;
+}
+.container{max-width:1200px;margin:auto;}
+header{
+padding:20px 0;
+border-bottom:1px solid var(--bg-secondary);
+}
+.nav{display:flex;justify-content:space-between;align-items:center;}
+.logo{
+width:44px;height:44px;
+background:var(--btn-accent);
+border-radius:10px;
+display:flex;align-items:center;justify-content:center;
+font-weight:800;color:white;
+}
+.brand-title{font-weight:800;color:var(--text-light);}
+.brand-sub{font-size:12px;color:var(--text-muted);}
+.nav-menu{display:flex;gap:25px;align-items:center;}
+.menu-item{display:flex;align-items:center;}
+.nav-menu .nav-link{
+text-decoration:none;
+color:var(--text-muted);
+font-weight:500;
+padding:10px 0;
+}
+.nav-menu .nav-link:hover{color:var(--btn-accent);}
+.nav-link.login{
+font-weight:500;
+color:var(--text-light);
+}
+.cta{
+padding:10px 16px;
+border-radius:var(--radius);
+text-decoration:none;
+font-weight:700;
+background-color:var(--btn-accent);
+color:white;
+border:1px solid var(--btn-accent);
+}
+.cta:hover{
+background-color:#a46dff;
+}
+.menu-btn{display:none;background:none;border:0;color:var(--text-light);font-size:20px;}
+.hero-apollo{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+padding:80px 20px;
+max-width:900px;
+margin:0 auto;
+min-height:500px;
+background:var(--bg-primary);
+}
+.apollo-title{
+font-size:52px;
+font-weight:900;
+line-height:1.1;
+color:var(--text-light);
+margin-bottom:15px;
+}
+.apollo-title .blue-accent{
+color:var(--btn-accent);
+font-weight:900;
+}
+.apollo-lead{
+font-size:19px;
+color:var(--text-muted);
+max-width:650px;
+margin-bottom:40px;
+line-height:1.5;
+}
+.apollo-form-row{
+display:flex;
+gap:10px;
+max-width:550px;
+width:100%;
+}
+.apollo-form-row input{
+flex:1;
+padding:14px 20px;
+border-radius:var(--radius);
+border:1px solid var(--bg-secondary);
+background:var(--bg-secondary);
+color:var(--text-light);
+font-size:16px;
+}
+.apollo-form-row input:focus{
+border-color:var(--btn-accent);
+outline:none;
+}
+.apollo-btn-main{
+padding:14px 20px;
+background-color:var(--btn-accent);
+color:white;
+border:none;
+border-radius:var(--radius);
+font-weight:700;
+font-size:16px;
+cursor:pointer;
+}
+.apollo-btn-main:hover{
+background-color:#a46dff;
+}
+.or-separator{
+color:var(--text-muted);
+margin:15px 0;
+font-size:14px;
+}
+.apollo-social-login{
+display:flex;
+gap:15px;
+margin-bottom:25px;
+}
+.apollo-social-btn{
+display:flex;
+align-items:center;
+gap:10px;
+padding:10px 18px;
+border:1px solid var(--bg-secondary);
+border-radius:var(--radius);
+background:var(--bg-secondary);
+font-weight:600;
+color:var(--text-light);
+cursor:pointer;
+font-size:15px;
+}
+.apollo-social-btn:hover{
+border-color:var(--btn-accent);
+}
+.apollo-legal{
+font-size:12px;
+color:var(--text-muted);
+}
+.apollo-legal a{
+color:var(--btn-accent);
+text-decoration:none;
+}
+.features-section,.pricing,footer{
+background:var(--bg-primary);
+color:var(--text-light);
+}
+.features-section{
+padding-top:40px;
+}
+.btn{
+padding:12px 18px;
+background:var(--btn-accent);
+border-radius:var(--radius);
+text-decoration:none;
+color:white;
+font-weight:700;
+}
+.btn.ghost{
+background:transparent;
+border:1px solid var(--text-muted);
+color:var(--text-muted);
+}
+.muted{color:var(--text-muted);}
+.badge{
+padding:8px 12px;
+background:var(--btn-accent);
+color:white;
+border-radius:6px;
+font-size:13px;
+font-weight:600;
+}
+.card{
+background:var(--bg-secondary);
+padding:18px;
+border-radius:14px;
+border:1px solid var(--bg-secondary);
+}
+.card i{
+color:var(--text-muted);
+font-size:24px;
+}
+.icon-group{
+display:flex;
+gap:10px;
+align-items:center;
+margin-bottom:10px;
+}
+.icon-image{width:24px;height:24px;border-radius:6px;object-fit:cover;}
+.highlight-text{color:var(--btn-accent);}
+.pricing{padding:40px 20px;}
+.price-card{
+background:var(--bg-secondary);
+border:1px solid var(--bg-secondary);
+}
+.highlight{
+border:2px solid var(--btn-accent);
+box-shadow:0 0 20px rgba(140,82,255,0.3);
+}
+.price-sub{font-size:14px;color:var(--text-muted);}
+footer{border-top:1px solid var(--bg-secondary);}
+.links a{color:var(--text-muted);}
+.login-body{
+background:var(--bg-primary);
+}
+.login-card{
+background:var(--bg-secondary);
+box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+.login-header h2{
+color:var(--text-light);
+}
+.form-group label{
+color:var(--text-light);
+}
+.form-group input{
+background:var(--bg-primary);
+border:1px solid var(--bg-primary);
+color:var(--text-light);
+}
+.form-group input:focus{
+border-color:var(--btn-accent);
+}
+.form-options a{
+color:var(--btn-accent);
+}
+.login-footer{
+color:var(--text-muted);
+}
+.login-footer a{
+color:var(--btn-accent);
+}
+@media(max-width:900px){
+.features{grid-template-columns:1fr 1fr;}
+.pricing-grid{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+.features{grid-template-columns:1fr;}
+.apollo-title{font-size:36px;}
+.apollo-form-row{flex-direction:column;}
+.apollo-social-login{flex-direction:column;gap:10px;}
+}
+/* --- NEW IMAGE STYLES --- */
+
+/* Hero Image below the form */
+.hero-image {
+    width: 100%;
+    max-width: 800px; /* Constrain size */
+    height: auto;
+    margin-top: 40px;
+    border-radius: var(--radius);
+    opacity: 0.9;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4); /* Darker shadow for dark theme */
+}
+
+/* Images inside Feature Cards */
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    margin-bottom: 15px;
+    object-fit: cover;
+    aspect-ratio: 16 / 9; /* Ensures a consistent visual ratio */
+}
+
+/* Images inside Pricing Cards */
+.price-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    margin-bottom: 15px;
+    object-fit: cover;
+    aspect-ratio: 4 / 3; /* Ensures a consistent visual ratio */
+}
